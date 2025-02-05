@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f0f0f0; /* Default background color */
+    padding: 20px;
+    background-image: url('pussy.jpg'); /* Initial background image */
+    background-size: cover; /* Make sure the background covers the screen */
+    background-position: center center; /* Center the image */
+    height: 100vh; /* Make sure the background image fills the viewport */
+    position: relative;
+}
+
+#content {
+    position: absolute; /* Positioning the content over the background */
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#questionContainer {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff4081; /* Pink color for the button */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e73572; /* Darker pink on hover */
+}
+
+#yesBtn {
+    padding: 30px 60px; /* Bigger size for the Yes button */
+    font-size: 34px; /* Bigger text size for the Yes button */
+}
+
+#noBtn {
+    padding: 10px 20px; /* Regular size for the No button */
+    font-size: 16px; /* Regular text size for the No button */
+}
+
+#message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* New styles for the background image below the message */
+#backgroundImage {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: block;
+    max-width: 500px; /* Limit the width of the image */
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute; /* Positioning image below content */
+    z-index: 1; /* Make sure it's behind the content */
+}
